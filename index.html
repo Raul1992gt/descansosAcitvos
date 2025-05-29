@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recordatorio de Descansos Activos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Descanso Activo</h1>
+
+        <div class="settings">
+            <div>
+                <label for="work-minutes">Minutos de Trabajo:</label>
+                <input type="number" id="work-minutes" value="25" min="1">
+            </div>
+            <div>
+                <label for="break-minutes">Minutos de Descanso:</label>
+                <input type="number" id="break-minutes" value="5" min="1">
+            </div>
+        </div>
+
+        <div id="timer-display" class="timer">25:00</div>
+        <div id="status-display" class="status">Tiempo de Trabajo</div>
+        <div class="buttons">
+            <button id="start-button">Iniciar</button>
+            <button id="pause-button" disabled>Pausar</button>
+            <button id="reset-button">Reiniciar</button>
+        </div>
+        <div id="activity-suggestion" class="activity"></div>
+        <div id="cycle-count">Ciclos: 0</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
