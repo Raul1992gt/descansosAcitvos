@@ -83,3 +83,14 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.permission-message {
+  background-color: #fff3cd; /* Un amarillo pálido para advertencias */
+  color: #856404; /* Un color de texto oscuro que contraste */
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  font-size: 0.9em;
+  text-align: center;
+}
